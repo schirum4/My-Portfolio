@@ -1,0 +1,69 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Blog · Swetha NSC</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+
+<div class="nav">
+  <div class="nav-inner container">
+    <div class="brand"><span class="dot"></span> <span>Swetha Naga Sai Chirumamilla</span></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+  <h1>Blog</h1>
+  <div class="card">
+    <div class="flex" style="margin-bottom:10px">
+      <input id="blogSearch" class="input" placeholder="Search posts (e.g., Flask auth)"
+             oninput="blogFilter(this.value, document.querySelector('input[name=tagBtn]:checked')?.value || 'all')" />
+      <div class="flex" role="group" aria-label="Filter by tag">
+        <label class="btn"><input type="radio" name="tagBtn" value="all" checked onchange="blogFilter(document.getElementById('blogSearch').value, this.value)"> All</label>
+        <label class="btn"><input type="radio" name="tagBtn" value="web" onchange="blogFilter(document.getElementById('blogSearch').value, this.value)"> Web</label>
+        <label class="btn"><input type="radio" name="tagBtn" value="ml" onchange="blogFilter(document.getElementById('blogSearch').value, this.value)"> ML</label>
+        <label class="btn"><input type="radio" name="tagBtn" value="security" onchange="blogFilter(document.getElementById('blogSearch').value, this.value)"> Security</label>
+      </div>
+    </div>
+    <p class="kicker">Thoughts on building secure, data-driven apps.</p>
+  </div>
+
+  <div class="grid" style="margin-top:16px">
+    <article class="row-6 card" data-post data-title="Passwordless Auth with Flask & MongoDB" data-tags="web,security"
+             data-body="Magic links or OTP, JWT sessions, rate limiting, abuse prevention.">
+      <h3><a href="post-passwordless-auth.html">Passwordless Auth with Flask & MongoDB</a></h3>
+      <p>Designing OTP flows, safeguarding against brute force, and keeping UX smooth.</p>
+      <div class="flex"><span class="tag">Web</span><span class="tag">Security</span><span class="tag">Flask</span></div>
+    </article>
+    <article class="row-6 card" data-post data-title="Grad-CAM Notes for EfficientNetV2-L" data-tags="ml"
+             data-body="Visualizing model attention to debug misclassifications in pest datasets.">
+      <h3><a href="post-gradcam-notes.html">Grad-CAM Notes for EfficientNetV2-L</a></h3>
+      <p>Where your model is “looking,” and what to do when it looks in the wrong place.</p>
+      <div class="flex"><span class="tag">ML</span><span class="tag">Vision</span></div>
+    </article>
+    <article class="row-6 card" data-post data-title="SAST vs DAST: Practical Differences" data-tags="security,web"
+             data-body="Checkmarx vs Acunetix in day-to-day workflows and triage.">
+      <h3><a href="post-sast-vs-dast.html">SAST vs DAST: Practical Differences</a></h3>
+      <p>How to combine static and dynamic tools without drowning in alerts.</p>
+      <div class="flex"><span class="tag">Security</span><span class="tag">SAST</span><span class="tag">DAST</span></div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner container">
+    <div>© <span id="year"></span> Swetha Naga Sai Chirumamilla</div>
+    <div class="flex">
+      <a href="mailto:nagasaichirum4@gmail.com">Email</a>
+      <a href="https://github.com/schirum4">GitHub</a>
+      <a href="https://www.linkedin.com">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/script.js"></script>
+
+</body></html>

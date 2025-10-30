@@ -1,0 +1,54 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>About · Swetha NSC</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+
+<div class="nav">
+  <div class="nav-inner container">
+    <div class="brand"><span class="dot"></span> <span>Swetha Naga Sai Chirumamilla</span></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+  <div class="grid">
+    <section class="row-8 card">
+      <h1>About me</h1>
+      <p>I'm a full-stack developer who loves secure backends and clean UX. I build with Flask, React, and MongoDB, and I’ve used Checkmarx/Acunetix to keep apps tight.</p>
+      <div class="badges" style="margin-top:10px">
+        <span class="badge">Flask</span><span class="badge">React</span><span class="badge">MongoDB</span><span class="badge">Socket.IO</span><span class="badge">Security</span>
+      </div>
+    </section>
+    <aside class="row-4 card">
+      <h3>Quick actions</h3>
+      <div class="flex"><a class="btn" href="NagasaiResume.pdf" target="_blank" rel="noopener">Open Resume</a><button class="btn" onclick="(async()=>{await navigator.clipboard.writeText('nagasaichirum4@gmail.com');})()">Copy Email</button></div>
+      <div class="flex" style="margin-top:10px"><a class="btn" href="assets/swetha.vcf" download>Download vCard</a><a class="btn" href="https://github.com/schirum4" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></div>
+    </aside>
+    <section class="row-12 card">
+      <h2>FAQs</h2>
+      <details open><summary><strong>What problems do you like to solve?</strong></summary><p>Auth flows, real-time messaging, and security triage that actually reduces noise.</p></details>
+      <details><summary><strong>How do I collaborate with you?</strong></summary><p>Open an issue on GitHub or ping me on LinkedIn; I respond quickly.</p></details>
+      <details><summary><strong>What are you learning now?</strong></summary><p>Hardening passwordless auth and improving observability for Flask APIs.</p></details>
+    </section>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner container">
+    <div>© <span id="year"></span> Swetha Naga Sai Chirumamilla</div>
+    <div class="flex">
+      <a href="mailto:nagasaichirum4@gmail.com">Email</a>
+      <a href="https://github.com/schirum4">GitHub</a>
+      <a href="https://www.linkedin.com">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/script.js"></script>
+
+</body></html>

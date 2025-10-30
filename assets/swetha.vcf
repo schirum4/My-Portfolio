@@ -1,0 +1,10 @@
+BEGIN:VCARD
+VERSION:3.0
+N:Chirumamilla;Swetha Naga Sai;;;
+FN:Swetha Naga Sai Chirumamilla
+EMAIL;type=INTERNET;type=WORK;type=pref: nagasaichirum4@gmail.com
+TEL;type=CELL:+1-937-209-5982
+item1.ADR;type=WORK:;;Kent;Ohio;;USA
+item1.X-ABADR:us
+URL:https://github.com/schirum4
+END:VCARD

@@ -1,0 +1,53 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Projects · Swetha NSC</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+
+<div class="nav">
+  <div class="nav-inner container">
+    <div class="brand"><span class="dot"></span> <span>Swetha Naga Sai Chirumamilla</span></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+  <h1>Projects</h1>
+  <div class="flex" style="margin:12px 0">
+    <button class="btn" onclick="filterProjects('all')">All</button>
+    <button class="btn" onclick="filterProjects('web')">Web</button>
+    <button class="btn" onclick="filterProjects('ml')">ML</button>
+    <button class="btn" onclick="filterProjects('security')">Security</button>
+  </div>
+  <div class="grid">
+    <article id="truest-ride" class="row-6 card" data-project data-tags="web,security">
+      <h3>Truest Ride</h3><p>Ride-sharing platform with passwordless auth, live chat, and scalable ride management.</p>
+      <div class="flex"><span class="tag">Flask</span><span class="tag">MongoDB</span><span class="tag">React</span><span class="tag">Socket.IO</span></div>
+      <div class="flex" style="margin-top:10px"><a class="btn" href="https://github.com/schirum4/Truest-Ride" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
+    <article class="row-6 card" data-project data-tags="ml">
+      <h3>Pest Classification (EfficientNetV2-L)</h3><p>12-class pest classifier with transfer learning and Grad-CAM explanations.</p>
+      <div class="flex"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">CNN</span></div>
+      <div class="flex" style="margin-top:10px"><a class="btn" href="https://github.com/schirum4/Pest-Classification-using-CNN" target="_blank" rel="noopener">GitHub</a></div>
+    </article>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner container">
+    <div>© <span id="year"></span> Swetha Naga Sai Chirumamilla</div>
+    <div class="flex">
+      <a href="mailto:nagasaichirum4@gmail.com">Email</a>
+      <a href="https://github.com/schirum4">GitHub</a>
+      <a href="https://www.linkedin.com">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/script.js"></script>
+
+</body></html>

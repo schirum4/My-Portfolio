@@ -1,0 +1,59 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Swetha Naga Sai Chirumamilla · Portfolio</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+
+<div class="nav">
+  <div class="nav-inner container">
+    <div class="brand"><span class="dot"></span> <span>Swetha Naga Sai Chirumamilla</span></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="blog.html">Blog</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
+    </div>
+  </div>
+</div>
+
+<header class="hero container">
+  <canvas id="particleCanvas"></canvas>
+  <div class="fx-layer">
+    <div class="fx-blob b1"></div>
+    <div class="fx-blob b2"></div>
+    <div class="fx-blob b3"></div>
+  </div>
+  <div class="content">
+  <p class="kicker">Full-Stack Developer · Security-minded · Data-driven</p>
+  <h1 class="gradient-text">Hi, I'm Swetha — I build secure, data-driven web apps.</h1>
+  <p>Graduate CS student with experience in Flask, React, MongoDB, and secure coding. I enjoy shipping clean UX and resilient backends.</p>
+  <div class="badges" style="margin-top:16px"><span class="badge">Flask</span><span class="badge">React</span><span class="badge">MongoDB</span><span class="badge">Socket.IO</span><span class="badge">Security Testing</span></div>
+  <div style="margin-top:16px" class="flex"><a class="btn" href="projects.html">View Projects →</a><a class="btn" href="resume.html">View Resume</a></div>
+  </div>
+</header>
+<main class="container">
+  <div class="grid">
+    <section class="row-8 card reveal"><h2>Highlights</h2>
+      <ul><li>Security-minded developer: SAST/DAST (Checkmarx, Acunetix).</li><li>Real-time messaging APIs (Flask + Socket.IO).</li><li>ML: EfficientNetV2-L + Grad-CAM.</li></ul>
+    </section>
+    <aside class="row-4 card reveal"><h3>Contact</h3>
+      <p><strong>Email:</strong> <a href="mailto:nagasaichirum4@gmail.com">nagasaichirum4@gmail.com</a></p>
+      <p><strong>Phone:</strong> <a href="tel:+19372095982">+1 937-209-5982</a></p>
+      <p><strong>Location:</strong> Kent, Ohio</p>
+    </aside>
+  </div>
+</main>
+
+<footer>
+  <div class="footer-inner container">
+    <div>© <span id="year"></span> Swetha Naga Sai Chirumamilla</div>
+    <div class="flex">
+      <a href="mailto:nagasaichirum4@gmail.com">Email</a>
+      <a href="https://github.com/schirum4">GitHub</a>
+      <a href="https://www.linkedin.com">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/script.js"></script>
+
+</body></html>
