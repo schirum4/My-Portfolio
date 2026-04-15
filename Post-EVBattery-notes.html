@@ -1,0 +1,72 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>EV Battery Inspection Dashboard</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+
+<div class="nav">
+  <div class="nav-inner container">
+    <div class="brand"><span class="dot"></span> <span>Swetha Naga Sai Chirumamilla</span></div>
+    <div class="menu">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="about.html">About</a>
+      <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
+    </div>
+  </div>
+</div>
+
+<main class="container">
+  <section class="card">
+    <h1>EV Battery Inspection Dashboard</h1>
+    <p class="kicker">Frontend · Dashboard · Data Visualization</p>
+
+    <p>
+      The EV Battery Inspection Dashboard is a React-based frontend prototype designed to monitor
+      battery health, track inspection workflows, and provide actionable insights through an
+      interactive and responsive UI.
+    </p>
+
+    <h2>Key Features</h2>
+    <ul>
+      <li>Responsive dashboard layout optimized for both desktop and mobile devices.</li>
+      <li>Battery health trend visualization using Recharts for clear data insights.</li>
+      <li>Searchable inspection queue for efficient navigation of records.</li>
+      <li>Status-based filtering for Passed, Review, and Alert categories.</li>
+      <li>Clickable inspection rows with dynamic selection highlighting.</li>
+      <li>Detailed battery panel displaying health, temperature, and voltage metrics.</li>
+      <li>Recent activity feed to track inspection updates in real time.</li>
+      <li>Action buttons simulating inspection workflow processes.</li>
+    </ul>
+
+    <h2>What I Learned</h2>
+    <ul>
+      <li>Designing responsive and scalable dashboard interfaces using React.</li>
+      <li>Visualizing complex data effectively with charts and UI components.</li>
+      <li>Improving user experience through filtering, search, and interactive elements.</li>
+      <li>Structuring frontend applications for maintainability and performance.</li>
+    </ul>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-inner container">
+    <div>© <span id="year"></span> Swetha Naga Sai Chirumamilla</div>
+    <div class="flex">
+      <a href="mailto:nagasaichirum4@gmail.com">Email</a>
+      <a href="https://github.com/schirum4">GitHub</a>
+      <a href="https://www.linkedin.com">LinkedIn</a>
+    </div>
+  </div>
+</footer>
+
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+<script src="assets/script.js"></script>
+
+</body>
+</html>

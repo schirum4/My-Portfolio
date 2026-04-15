@@ -1,5 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Resume · Swetha NSC</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Resume · Swetha NSC</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
 
 <div class="nav">
   <div class="nav-inner container">
@@ -7,25 +14,69 @@
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
-      <a href="resume.html">Resume</a>
+      <a href="resume.html" class="active">Resume</a>
       <a href="about.html">About</a>
       <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
     </div>
   </div>
 </div>
 
-<main class="container"><h1>Resume</h1>
-  <div class="card">
-    <div class="flex"><a class="btn" href="NagasaiResume.pdf" target="_blank" rel="noopener">Open Resume</a></div>
-    <hr/>
-    <h3>At a glance</h3>
-    <table class="table">
-      <tr><th>Education</th><td>Kent State University (MS, CS), GPA 3.55/4.0</td></tr>
-      <tr><th>Core</th><td>Flask, React, MongoDB, Socket.IO · SAST/DAST (Checkmarx, Acunetix)</td></tr>
-      <tr><th>Interests</th><td>Secure systems, real-time APIs, data-driven UX</td></tr>
-    </table>
-  </div>
+<main class="container">
+  <section class="card">
+    <h1>Resume</h1>
+    <p class="kicker">Full-Stack Developer · Backend Focus</p>
+
+    <p>
+      Full-stack developer with experience building secure, scalable applications
+      using modern web technologies. Focused on backend systems, real-time APIs,
+      and data-driven user experiences.
+    </p>
+
+    <div class="flex" style="margin-top:16px">
+      <a class="btn" href="NagasaiResume.pdf" target="_blank" rel="noopener">View Resume</a>
+      <a class="btn" href="NagasaiResume.pdf" download>Download PDF</a>
+    </div>
+  </section>
+
+  <section class="grid" style="margin-top:18px">
+    <div class="row-6 card">
+      <h2>Education</h2>
+      <p>Kent State University</p>
+      <p class="muted">Master of Science in Computer Science</p>
+      <p class="muted">GPA: 3.55 / 4.0</p>
+    </div>
+
+    <div class="row-6 card">
+      <h2>Core Skills</h2>
+      <ul class="project-list">
+        <li>Backend: Flask, REST APIs, Real-Time Systems</li>
+        <li>Frontend: React, Responsive UI</li>
+        <li>Database: MongoDB</li>
+        <li>Security: SAST, DAST (Checkmarx, Acunetix)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="grid" style="margin-top:18px">
+    <div class="row-6 card">
+      <h2>Interests</h2>
+      <ul class="project-list">
+        <li>Secure system design</li>
+        <li>Real-time communication systems</li>
+        <li>Scalable backend architecture</li>
+        <li>Data-driven user interfaces</li>
+      </ul>
+    </div>
+
+    <div class="row-6 card">
+      <h2>Quick Summary</h2>
+      <p>
+        Passionate about building efficient, reliable software systems.
+        Interested in backend engineering roles where performance,
+        scalability, and security are critical.
+      </p>
+    </div>
+  </section>
 </main>
 
 <footer>
@@ -38,7 +89,9 @@
     </div>
   </div>
 </footer>
+
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="assets/script.js"></script>
 
-</body></html>
+</body>
+</html>

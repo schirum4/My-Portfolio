@@ -1,13 +1,19 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Swetha Naga Sai Chirumamilla · Portfolio</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Swetha Naga Sai Chirumamilla · Portfolio</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
 
 <div class="nav">
   <div class="nav-inner container">
     <div class="brand"><span class="dot"></span> <span>Swetha Naga Sai Chirumamilla</span></div>
     <div class="menu">
-      <a href="index.html">Home</a>
+      <a href="index.html" class="active">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
       <a href="resume.html">Resume</a>
       <a href="about.html">About</a>
       <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
@@ -17,29 +23,77 @@
 
 <header class="hero container">
   <canvas id="particleCanvas"></canvas>
+
   <div class="fx-layer">
     <div class="fx-blob b1"></div>
     <div class="fx-blob b2"></div>
     <div class="fx-blob b3"></div>
   </div>
+
   <div class="content">
-  <p class="kicker">Full-Stack Developer · Security-minded · Data-driven</p>
-  <h1 class="gradient-text">Hi, I'm Swetha — I build secure, data-driven web apps.</h1>
-  <p>Graduate CS student with experience in Flask, React, MongoDB, and secure coding. I enjoy shipping clean UX and resilient backends.</p>
-  <div class="badges" style="margin-top:16px"><span class="badge">Flask</span><span class="badge">React</span><span class="badge">MongoDB</span><span class="badge">Socket.IO</span><span class="badge">Security Testing</span></div>
-  <div style="margin-top:16px" class="flex"><a class="btn" href="projects.html">View Projects →</a><a class="btn" href="resume.html">View Resume</a></div>
+    <p class="kicker">Full-Stack Developer · Backend Focus · Security-Minded</p>
+    <h1 class="gradient-text">Hi, I’m Swetha. I build secure, scalable, and data-driven web applications.</h1>
+
+    <p>
+      I’m a Full-Stack Developer and Computer Science graduate student with 3+ years of experience
+      building enterprise applications across banking and consulting environments. I specialize in
+      backend systems using Java and Spring Boot, while also developing responsive frontend applications
+      with React and Next.js.
+    </p>
+
+    <div class="badges" style="margin-top:16px">
+      <span class="badge">Java</span>
+      <span class="badge">Spring Boot</span>
+      <span class="badge">React</span>
+      <span class="badge">Next.js</span>
+      <span class="badge">AWS</span>
+      <span class="badge">Azure</span>
+      <span class="badge">Security</span>
+    </div>
+
+    <div class="flex" style="margin-top:18px">
+      <a class="btn" href="projects.html">View Projects</a>
+      <a class="btn" href="resume.html">View Resume</a>
+      <a class="btn" href="about.html">About Me</a>
+    </div>
   </div>
 </header>
+
 <main class="container">
   <div class="grid">
-    <section class="row-8 card reveal"><h2>Highlights</h2>
-      <ul><li>Security-minded developer: SAST/DAST (Checkmarx, Acunetix).</li><li>Real-time messaging APIs (Flask + Socket.IO).</li><li>ML: EfficientNetV2-L + Grad-CAM.</li></ul>
+
+    <section class="row-8 card reveal">
+      <h2>Highlights</h2>
+      <ul class="project-list">
+        <li>Built secure and scalable full-stack applications in enterprise environments.</li>
+        <li>Experienced in backend development with Java, Spring Boot, REST APIs, and microservices.</li>
+        <li>Developed responsive frontend interfaces using React and Next.js.</li>
+        <li>Worked with AWS, Azure, PostgreSQL, Redis, and cloud-based deployments.</li>
+        <li>Strong focus on security, performance optimization, and production-ready systems.</li>
+      </ul>
     </section>
-    <aside class="row-4 card reveal"><h3>Contact</h3>
+
+    <aside class="row-4 card reveal">
+      <h3>Contact</h3>
       <p><strong>Email:</strong> <a href="mailto:nagasaichirum4@gmail.com">nagasaichirum4@gmail.com</a></p>
       <p><strong>Phone:</strong> <a href="tel:+19372095982">+1 937-209-5982</a></p>
       <p><strong>Location:</strong> Kent, Ohio</p>
+
+      <div class="flex" style="margin-top:14px">
+        <a class="btn" href="https://github.com/schirum4" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/nagasai-chirumamilla" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </aside>
+
+    <section class="row-12 card reveal">
+      <h2>What I Work On</h2>
+      <p>
+        I enjoy building backend systems, secure authentication workflows, real-time applications,
+        and dashboard-driven user experiences. My projects span full-stack development, data visualization,
+        machine learning, and security-focused engineering.
+      </p>
+    </section>
+
   </div>
 </main>
 
@@ -49,11 +103,13 @@
     <div class="flex">
       <a href="mailto:nagasaichirum4@gmail.com">Email</a>
       <a href="https://github.com/schirum4">GitHub</a>
-      <a href="https://www.linkedin.com">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/nagasai-chirumamilla">LinkedIn</a>
     </div>
   </div>
 </footer>
+
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="assets/script.js"></script>
 
-</body></html>
+</body>
+</html>

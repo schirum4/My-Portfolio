@@ -1,5 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>About · Swetha NSC</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>About · Swetha NSC</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
 
 <div class="nav">
   <div class="nav-inner container">
@@ -7,9 +14,8 @@
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
       <a href="resume.html">Resume</a>
-      <a href="about.html">About</a>
+      <a href="about.html" class="active">About</a>
       <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
     </div>
   </div>
@@ -17,24 +23,86 @@
 
 <main class="container">
   <div class="grid">
+    
     <section class="row-8 card">
-      <h1>About me</h1>
-      <p>I'm a full-stack developer who loves secure backends and clean UX. I build with Flask, React, and MongoDB, and I’ve used Checkmarx/Acunetix to keep apps tight.</p>
-      <div class="badges" style="margin-top:10px">
-        <span class="badge">Flask</span><span class="badge">React</span><span class="badge">MongoDB</span><span class="badge">Socket.IO</span><span class="badge">Security</span>
+      <p class="kicker">About Me</p>
+      <h1>Building secure and scalable software systems</h1>
+
+      <p>
+        I’m a Full-Stack Developer with 3+ years of experience building secure,
+        scalable enterprise applications across banking and consulting environments.
+        My work focuses on backend development with Java and Spring Boot, along with
+        modern frontend applications using React and Next.js.
+      </p>
+
+      <p>
+        I have experience designing microservices, building RESTful APIs, working with
+        cloud platforms such as AWS and Azure, and improving application performance
+        using technologies like PostgreSQL and Redis. I enjoy building reliable systems
+        that are cleanly designed, production-ready, and easy to scale.
+      </p>
+
+      <p>
+        I also bring a strong security mindset to development, with experience in
+        RBAC, OAuth2, compliance-driven workflows, and enterprise-grade application practices.
+        I’m especially interested in backend engineering, real-time systems, and software
+        that solves practical business problems.
+      </p>
+
+      <div class="badges" style="margin-top:14px">
+        <span class="badge">Java</span>
+        <span class="badge">Spring Boot</span>
+        <span class="badge">React</span>
+        <span class="badge">Next.js</span>
+        <span class="badge">AWS</span>
+        <span class="badge">Azure</span>
+        <span class="badge">PostgreSQL</span>
+        <span class="badge">Redis</span>
+        <span class="badge">Security</span>
       </div>
     </section>
+
     <aside class="row-4 card">
-      <h3>Quick actions</h3>
-      <div class="flex"><a class="btn" href="NagasaiResume.pdf" target="_blank" rel="noopener">Open Resume</a><button class="btn" onclick="(async()=>{await navigator.clipboard.writeText('nagasaichirum4@gmail.com');})()">Copy Email</button></div>
-      <div class="flex" style="margin-top:10px"><a class="btn" href="assets/swetha.vcf" download>Download vCard</a><a class="btn" href="https://github.com/schirum4" target="_blank" rel="noopener">GitHub</a><a class="btn" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a></div>
+      <h3>Quick Actions</h3>
+      <div class="flex">
+        <a class="btn" href="NagasaiResume.pdf" target="_blank" rel="noopener">View Resume</a>
+        <button class="btn" onclick="(async()=>{await navigator.clipboard.writeText('nagasaichirum4@gmail.com');})()">Copy Email</button>
+      </div>
+
+      <div class="flex" style="margin-top:10px">
+        <a class="btn" href="assets/swetha.vcf" download>Download vCard</a>
+        <a class="btn" href="https://github.com/schirum4" target="_blank" rel="noopener">GitHub</a>
+        <a class="btn" href="https://www.linkedin.com/in/nagasai-chirumamilla" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
+
+      <hr>
+
+      <h3>Current Focus</h3>
+      <p>
+        Backend systems, API development, secure authentication flows,
+        and building responsive, data-driven web applications.
+      </p>
     </aside>
+
     <section class="row-12 card">
       <h2>FAQs</h2>
-      <details open><summary><strong>What problems do you like to solve?</strong></summary><p>Auth flows, real-time messaging, and security triage that actually reduces noise.</p></details>
-      <details><summary><strong>How do I collaborate with you?</strong></summary><p>Open an issue on GitHub or ping me on LinkedIn; I respond quickly.</p></details>
-      <details><summary><strong>What are you learning now?</strong></summary><p>Hardening passwordless auth and improving observability for Flask APIs.</p></details>
+
+      <details open>
+        <summary><strong>What kind of problems do you enjoy solving?</strong></summary>
+        <p>I enjoy working on backend systems, authentication workflows, real-time features, and performance-focused web applications.</p>
+      </details>
+
+      <details>
+        <summary><strong>What technologies do you work with most?</strong></summary>
+        <p>I primarily work with Java, Spring Boot, React, Next.js, PostgreSQL, Redis, AWS, and Azure.</p>
+      </details>
+
+      <details>
+        <summary><strong>What are you currently looking for?</strong></summary>
+        <p>I’m looking for opportunities where I can contribute to impactful software systems and continue growing as a backend-focused full-stack developer.</p>
+      </details>
     </section>
+
   </div>
 </main>
 
@@ -44,11 +112,13 @@
     <div class="flex">
       <a href="mailto:nagasaichirum4@gmail.com">Email</a>
       <a href="https://github.com/schirum4">GitHub</a>
-      <a href="https://www.linkedin.com">LinkedIn</a>
+      <a href="https://www.linkedin.com/in/nagasai-chirumamilla">LinkedIn</a>
     </div>
   </div>
 </footer>
+
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="assets/script.js"></script>
 
-</body></html>
+</body>
+</html>

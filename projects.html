@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Projects · Swetha NSC</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+<title>projects · Swetha NSC</title><link rel="stylesheet" href="assets/styles.css"></head><body>
 
 <div class="nav">
   <div class="nav-inner container">
@@ -7,7 +7,6 @@
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
       <a href="resume.html">Resume</a>
       <a href="about.html">About</a>
       <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
@@ -17,23 +16,124 @@
 
 <main class="container">
   <h1>Projects</h1>
-  <div class="flex" style="margin:12px 0">
-    <button class="btn" onclick="filterProjects('all')">All</button>
-    <button class="btn" onclick="filterProjects('web')">Web</button>
-    <button class="btn" onclick="filterProjects('ml')">ML</button>
-    <button class="btn" onclick="filterProjects('security')">Security</button>
+  <div class="card">
+    <div class="flex" style="margin-bottom:10px">
+      <input id="projectsSearch" class="input" placeholder="Search posts (e.g., Flask auth)"
+             oninput="projectsFilter(this.value, document.querySelector('input[name=tagBtn]:checked')?.value || 'all')" />
+      <div class="flex" role="group" aria-label="Filter by tag">
+        <label class="btn"><input type="radio" name="tagBtn" value="all" checked onchange="projectsFilter(document.getElementById('projectsSearch').value, this.value)"> All</label>
+        <label class="btn"><input type="radio" name="tagBtn" value="web" onchange="projectsFilter(document.getElementById('projectsSearch').value, this.value)"> Web</label>
+        <label class="btn"><input type="radio" name="tagBtn" value="ml" onchange="projectsFilter(document.getElementById('projectsSearch').value, this.value)"> ML</label>
+        <label class="btn"><input type="radio" name="tagBtn" value="security" onchange="projectsFilter(document.getElementById('projectsSearch').value, this.value)"> Security</label>
+      </div>
+    </div>
+    <p class="kicker">Thoughts on building secure, data-driven apps.</p>
   </div>
-  <div class="grid">
-    <article id="truest-ride" class="row-6 card" data-project data-tags="web,security">
-      <h3>Truest Ride</h3><p>Ride-sharing platform with passwordless auth, live chat, and scalable ride management.</p>
-      <div class="flex"><span class="tag">Flask</span><span class="tag">MongoDB</span><span class="tag">React</span><span class="tag">Socket.IO</span></div>
-      <div class="flex" style="margin-top:10px"><a class="btn" href="https://github.com/schirum4/Truest-Ride" target="_blank" rel="noopener">GitHub</a></div>
+
+  <div class="grid" style="margin-top:16px">
+    <article class="row-6 card" data-post data-title="Truest Ride" data-tags="web ride-sharing"
+         data-body="Built a scalable student ride-sharing platform with real-time communication, intelligent ride matching, and secure OTP-based authentication. Implemented REST APIs, optimized MongoDB queries, and ensured low-latency updates using Socket.IO.">
+  <h3><a href="TruestRide-notes.html">Truest Ride – Scalable Ride-Sharing Platform</a></h3>
+  <p>Engineered a full-stack ride-sharing application enabling real-time ride coordination, secure authentication, and efficient matching for students.</p>
+  <div class="flex">
+    <span class="tag">React</span>
+    <span class="tag">Flask</span>
+    <span class="tag">MongoDB</span>
+    <span class="tag">Socket.IO</span>
+    <span class="tag">REST APIs</span>
+  </div>
+</article>
+
+<article class="row-6 card" data-post data-title="EV Battery Inspection Dashboard" data-tags="frontend dashboard react"
+         data-body="Developed a responsive React-based dashboard for EV battery inspection workflows, featuring battery health trend visualization, searchable inspection queues, status-based filtering, and detailed battery analytics including temperature and voltage insights.">
+  <h3><a href="Post-EVBattery-notes.html">EV Battery Inspection Dashboard</a></h3>
+  <p>Engineered a dashboard UI to monitor battery health, filter inspection data, and visualize trends with interactive and responsive design.</p>
+  <div class="flex">
+    <span class="tag">React</span>
+    <span class="tag">Recharts</span>
+    <span class="tag">Dashboard UI</span>
+    <span class="tag">Data Visualization</span>
+    <span class="tag">Responsive Design</span>
+  </div>
+</article>
+
+<article class="row-6 card" data-post data-title="Recipe Management System" data-tags="web"
+         data-body="Developed a web-based recipe management system enabling users to create, view, update, and delete recipes. Designed intuitive interfaces for organizing recipes by cuisine and ingredients, ensuring efficient data handling and user-friendly interactions.">
+  <h3><a href="Post-Recipe-notes.html">Recipe Management System</a></h3>
+  <p>Built a CRUD-based web application to manage and organize recipes with features for adding, editing, and deleting entries.</p>
+  <div class="flex">
+    <span class="tag">Web</span>
+    <span class="tag">CRUD</span>
+    <span class="tag">Database</span>
+    <span class="tag">UI/UX</span>
+  </div>
+</article>
+    <article class="row-6 card" data-post data-title="Passwordless Auth with Flask & MongoDB" data-tags="web,security"
+             data-body="Magic links or OTP, JWT sessions, rate limiting, abuse prevention.">
+      <h3><a href="post-passwordless-auth.html">Passwordless Auth with Flask & MongoDB</a></h3>
+      <p>Designing OTP flows, safeguarding against brute force, and keeping UX smooth.</p>
+      <div class="flex"><span class="tag">Web</span><span class="tag">Security</span><span class="tag">Flask</span></div>
     </article>
-    <article class="row-6 card" data-project data-tags="ml">
-      <h3>Pest Classification (EfficientNetV2-L)</h3><p>12-class pest classifier with transfer learning and Grad-CAM explanations.</p>
-      <div class="flex"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">CNN</span></div>
-      <div class="flex" style="margin-top:10px"><a class="btn" href="https://github.com/schirum4/Pest-Classification-using-CNN" target="_blank" rel="noopener">GitHub</a></div>
+
+    <article class="row-6 card" data-post data-title="Pest Classification" data-tags="ml computer-vision"
+         data-body="Developed a deep learning-based pest classification system using CNNs and transfer learning. Improved model interpretability by implementing Grad-CAM visualizations to analyze prediction behavior and identify misclassifications.">
+  <h3><a href="post-gradcam-notes.html">Pest Classification with CNN and Grad-CAM</a></h3>
+  <p>Built an image classification model to identify pests and enhanced model transparency using Grad-CAM for visual explanations.</p>
+  <div class="flex">
+    <span class="tag">Python</span>
+    <span class="tag">TensorFlow</span>
+    <span class="tag">CNN</span>
+    <span class="tag">Computer Vision</span>
+    <span class="tag">Grad-CAM</span>
+  </div>
+</article>
+
+    <article class="row-6 card" data-post data-title="SAST vs DAST: Practical Differences" data-tags="security,web"
+             data-body="Checkmarx vs Acunetix in day-to-day workflows and triage.">
+      <h3><a href="post-sast-vs-dast.html">SAST vs DAST: Practical Differences</a></h3>
+      <p>How to combine static and dynamic tools without drowning in alerts.</p>
+      <div class="flex"><span class="tag">Security</span><span class="tag">SAST</span><span class="tag">DAST</span></div>
     </article>
+
+    <article class="row-6 card" data-post data-title="Ride Sharing Analytics" data-tags="data-analytics bi visualization"
+         data-body="Built an interactive Power BI dashboard analyzing 500+ ride records to uncover demand patterns, route profitability, driver performance, and customer tipping behavior. Enabled data-driven insights through dynamic filtering and visualizations.">
+  <h3><a href="post-ride-powerBI-notes.html">Ride Sharing Analytics Dashboard (Power BI)</a></h3>
+  <p>Developed a data-driven dashboard to analyze ride-sharing trends, optimize routes, and evaluate driver and customer behavior.</p>
+  <div class="flex">
+    <span class="tag">Power BI</span>
+    <span class="tag">Data Analytics</span>
+    <span class="tag">Data Visualization</span>
+    <span class="tag">Dashboard</span>
+    <span class="tag">Business Intelligence</span>
+  </div>
+</article>
+
+<article class="row-6 card" data-post data-title="Task Management API" data-tags="backend api dotnet"
+         data-body="Developed a RESTful Task Management API using ASP.NET Core 6, supporting task creation and updates. Implemented service-layer business logic and validated functionality with unit tests using xUnit, with an in-memory repository for lightweight testing.">
+  <h3><a href="post-task-api-notes.html">Task Management API (ASP.NET Core 6)</a></h3>
+  <p>Built a RESTful API with service-layer architecture and unit testing to manage tasks efficiently without database dependency.</p>
+  <div class="flex">
+    <span class="tag">ASP.NET Core</span>
+    <span class="tag">C#</span>
+    <span class="tag">REST API</span>
+    <span class="tag">xUnit</span>
+    <span class="tag">Backend</span>
+  </div>
+</article>
+
+<article class="row-6 card" data-post data-title="PickNik Three.js Demo" data-tags="frontend 3d interactive"
+         data-body="Built an interactive 3D web demo using React, TypeScript, and Three.js with orbit controls and simulated real-time scene updates. Designed to run locally with a modern frontend workflow and deploy as a lightweight interactive experience.">
+  <h3><a href="post-three-js-notes.html">PickNik Three.js Demo</a></h3>
+  <p>Developed an interactive 3D web application featuring orbit controls and simulated real-time updates for dynamic user interaction.</p>
+  <div class="flex">
+    <span class="tag">React</span>
+    <span class="tag">TypeScript</span>
+    <span class="tag">Three.js</span>
+    <span class="tag">3D Visualization</span>
+    <span class="tag">Interactive UI</span>
+  </div>
+</article>
+    
   </div>
 </main>
 

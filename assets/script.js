@@ -56,8 +56,8 @@
   document.querySelectorAll('.menu a').forEach(a=>{ const url=a.getAttribute('href'); if(url===here) a.classList.add('active'); });
 })();
 
-// Blog filter
-function blogFilter(term='', tag='all'){
+// projects filter
+function projectsFilter(term='', tag='all'){
   term = (term||'').toLowerCase();
   document.querySelectorAll('[data-post]').forEach(card=>{
     const title=(card.getAttribute('data-title')||'').toLowerCase();
@@ -73,7 +73,7 @@ function blogFilter(term='', tag='all'){
 (function(){
   if(document.getElementById('globalCta')) return;
   const cta = document.createElement('section'); cta.id='globalCta'; cta.className='cta-banner';
-  cta.innerHTML = '<div class="cta-inner container">    <div>      <div class="cta-title">Available for Full Time, internships & contract work</div>      <div class="cta-sub">Full‑stack (Flask · React · MongoDB) · Security‑minded · Fast iterations</div>    </div>    <div class="cta-actions">      <a class="btn" href="NagasaiResume.pdf" target="_blank" rel="noopener">View Resume</a>      <a class="btn" href="https://github.com/schirum4" target="_blank" rel="noopener">GitHub</a>      <a class="btn" href="https://www.linkedin.com" target="_blank" rel="noopener">LinkedIn</a>      <button class="btn" id="ctaCopyEmailBtn" type="button">Copy Email</button>    </div>  </div>';
+  cta.innerHTML = '<div class="cta-inner container">    <div>      <div class="cta-title">Available for Full Time, internships & contract work</div>      <div class="cta-sub">Full‑stack (Flask · React · MongoDB) · Security‑minded · Fast iterations</div>    </div>    <div class="cta-actions">      <a class="btn" href="NagasaiResume.pdf" target="_blank" rel="noopener">View Resume</a>      <a class="btn" href="https://github.com/schirum4" target="_blank" rel="noopener">GitHub</a>      <a class="btn" href="https://www.linkedin.com/in/nagasai-chirumamilla" target="_blank" rel="noopener">LinkedIn</a>      <button class="btn" id="ctaCopyEmailBtn" type="button">Email</button>    </div>  </div>';
   const nav = document.querySelector('.nav'); if(nav && nav.parentNode) nav.parentNode.insertBefore(cta, nav.nextSibling); else document.body.prepend(cta);
 
   if(!document.getElementById('emailChip')){

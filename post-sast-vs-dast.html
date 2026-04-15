@@ -1,5 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>SAST vs DAST: Practical Differences</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SAST vs DAST: Practical Differences</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
 
 <div class="nav">
   <div class="nav-inner container">
@@ -7,7 +14,6 @@
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
       <a href="resume.html">Resume</a>
       <a href="about.html">About</a>
       <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
@@ -16,7 +22,34 @@
 </div>
 
 <main class="container">
-<section class="card"><h1>SAST vs DAST: Practical Differences</h1><p class='kicker'>Security</p><ul><li>SAST on PRs; DAST nightly on staging.</li><li>Gate on criticals, label owners.</li><li>De‑dupe by CWE to cut noise.</li></ul></section>
+  <section class="card">
+    <h1>SAST vs DAST: Practical Differences</h1>
+    <p class="kicker">Security · Application Testing · Secure Development</p>
+
+    <p>
+      This topic explores the practical differences between Static Application Security Testing (SAST)
+      and Dynamic Application Security Testing (DAST) in modern software development workflows.
+      Both approaches play an important role in identifying vulnerabilities, but they are most effective
+      when used at different stages of the development and deployment lifecycle.
+    </p>
+
+    <h2>Key Highlights</h2>
+    <ul>
+      <li>Integrated SAST into pull request workflows to detect vulnerabilities early during development.</li>
+      <li>Scheduled DAST scans on staging environments as part of continuous security validation.</li>
+      <li>Used critical severity gates to prevent high-risk issues from moving forward in the release cycle.</li>
+      <li>Assigned clear ownership for remediation to improve accountability and response time.</li>
+      <li>Reduced alert fatigue by deduplicating findings using CWE-based classification.</li>
+    </ul>
+
+    <h2>What I Learned</h2>
+    <ul>
+      <li>How SAST and DAST complement each other in a secure SDLC workflow.</li>
+      <li>The importance of shifting security earlier in the development lifecycle.</li>
+      <li>How structured triage and ownership improve vulnerability management.</li>
+      <li>How reducing duplicate findings helps teams focus on meaningful security issues.</li>
+    </ul>
+  </section>
 </main>
 
 <footer>
@@ -29,7 +62,9 @@
     </div>
   </div>
 </footer>
+
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="assets/script.js"></script>
 
-</body></html>
+</body>
+</html>

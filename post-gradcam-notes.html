@@ -1,5 +1,12 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Grad-CAM Notes for EfficientNetV2-L</title><link rel="stylesheet" href="assets/styles.css"></head><body>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Pest Classification with CNN and Grad-CAM</title>
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
 
 <div class="nav">
   <div class="nav-inner container">
@@ -7,7 +14,6 @@
     <div class="menu">
       <a href="index.html">Home</a>
       <a href="projects.html">Projects</a>
-      <a href="blog.html">Blog</a>
       <a href="resume.html">Resume</a>
       <a href="about.html">About</a>
       <button id="themeToggle" class="btn mono" aria-label="Toggle theme">🌙 Dark</button>
@@ -16,7 +22,34 @@
 </div>
 
 <main class="container">
-<section class="card"><h1>Grad-CAM Notes for EfficientNetV2-L</h1><p class='kicker'>ML · Vision</p><ul><li>Pick correct conv layer for CAMs.</li><li>Compare TPs vs FPs to spot bias.</li><li>Augment where heatmaps show background focus.</li></ul></section>
+  <section class="card">
+    <h1>Pest Classification with CNN and Grad-CAM</h1>
+    <p class="kicker">Machine Learning · Computer Vision · Deep Learning</p>
+
+    <p>
+      This project focuses on classifying pests from image data using deep learning.
+      By applying CNN-based modeling and Grad-CAM visualization, the system not only
+      predicts pest categories but also improves interpretability by showing which
+      regions of the image influenced the model’s decision.
+    </p>
+
+    <h2>Key Highlights</h2>
+    <ul>
+      <li>Built an image classification model to identify multiple pest categories.</li>
+      <li>Used CNN-based deep learning techniques for feature extraction and prediction.</li>
+      <li>Applied transfer learning to improve performance on image data.</li>
+      <li>Implemented Grad-CAM visualization to interpret model predictions.</li>
+      <li>Improved model understanding by analyzing attention regions and misclassifications.</li>
+    </ul>
+
+    <h2>What I Learned</h2>
+    <ul>
+      <li>How deep learning models can be applied to real-world image classification problems.</li>
+      <li>The importance of model interpretability in machine learning workflows.</li>
+      <li>How Grad-CAM helps explain CNN predictions visually.</li>
+      <li>How to evaluate and improve model behavior using visual feedback.</li>
+    </ul>
+  </section>
 </main>
 
 <footer>
@@ -29,7 +62,9 @@
     </div>
   </div>
 </footer>
+
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 <script src="assets/script.js"></script>
 
-</body></html>
+</body>
+</html>
